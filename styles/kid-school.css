@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* General styles */
+body{
+    margin: 0;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* Navbar styles */
+.navbar{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;  /*  imp  */
+}
+
+/* Logo and Brand */
+.logo-brand{
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img{
+    height: 40px;
+    margin-right: 10px;
+}
+.brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Individual link colors */
+.home{
+    color: orange;
+}
+
+.about{
+    color: skyblue;
+}
+
+.facilities{
+    color: #05D4DF;
+}
+
+.admission{
+    color: #5D58EF;
+}
+
+/* Contact button */
+.btn-contact{
+    color: white;
+    font-size: 1/25rem;
+    background-color: orange;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-contact:hover{
+    background-color:orange;
+}
+
+/* Mobile view */
+@media screen and (max-width: 576px) {
+    /* Hide elements */
+    .nav-links,
+    .btn-contact,
+    .brand    
+    {
+        display: none; 
+    }
+   
+
+    /* Logo Styling */
+    .logo-brand {
+        margin-left: 20px; /* Add left margin for spacing */
+        margin-top: 10px;
+                
+    }
+
+    /* Menu Icon Styling */
+    .menu-icon {
+        margin-right: 20px;
+        margin-top: 10px;
+        position: center;
+        
+        
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+}
+
+/* -----------------------Section two--------------------- */
+.banner{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-enroll{
+    color: white;
+    font-size: 1.25rem;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content-text{
+    max-width: 640px;
+}
+
+.hero-img{
+    max-width: 570vw;
+    max-height: 680vw;
+}
+
+
+/* ------------------------Section three ----------------------------- */
+#btn-two{
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
