@@ -136,7 +136,7 @@ body{
     margin: 0 auto;
     padding: 10px 20px;
     align-items: center;
-    background-image: url('assets/bg.png');
+    /* background-image: url('assets/bg.png'); */
     background-size: cover;
     background-position: center;
 }
@@ -158,11 +158,13 @@ body{
 }
 
 .card {
+    max-height: 480px;
+    max-width: 367px;
     flex: 1;
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    color: white;
+    color:black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -171,26 +173,30 @@ body{
     margin-bottom: 10px;
 }
 
+.card-detail-font{
+    color: rgba(128, 128, 128, 1);
+}
+
 /* Unique Gradient Backgrounds */
 .kinder {
-    background: linear-gradient(135deg, #64C8FF, #0088FF);
+    background: linear-gradient(180deg, rgba(222, 245, 255, 1), white);
 }
 
 .elementary {
-    background: linear-gradient(135deg, orange, #FF4500);
+    background: linear-gradient(135deg, rgba(255, 244, 220, 1), white);
 }
 
 .middle {
-    background: linear-gradient(135deg, #8700FF, #5400FF);
+    background: linear-gradient(135deg, rgba(242, 232, 255, 1), white);
 }
 
 /* Read More Button */
 #btn-two {
     border: none;
-    background-color: white;
+    background-color: transparent;
     font-weight: bold;
     font-size: 1.25rem;
-    color: black;
+    /* color: black; */
     padding: 10px 20px;
     border-radius: 12px;
     cursor: pointer;
@@ -209,11 +215,14 @@ body{
 }
 
 .arrow-btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    border: none;
     border-radius: 50%;
-    background: white;
+    background: orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,8 +232,8 @@ body{
 
 .arrow-btn:hover {
     transform: scale(1.1);
-    background-color: black;
-    color: white;
+    background-color:#05D4DF ;
+    color: white ;
 }
 
 /* Responsive Design */
