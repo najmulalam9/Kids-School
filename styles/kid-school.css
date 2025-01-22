@@ -247,3 +247,40 @@ body{
         width: 90%;
     }
 }
+/* -----------------------Section 4------------------------------------ */
+.bg-story{
+    background: linear-gradient(180deg, white, rgb(254, 198, 100));
+}
+
+/* .story-img{
+   
+} */
+
+.image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Responsive columns */
+      grid-gap: 20px;
+    }
+
+    .image-container {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ------------------------------------------------------------------------------------ */
+
+    /* -------------------footer background------------------------------------------ */
+    .footer-bg{
+        background-color: #01ACFD;
+        padding: 123px 228px 173px 140px;
+        color: white;
+        justify-content: space-between;
+        /* display: grid; */
+    }
+ 
