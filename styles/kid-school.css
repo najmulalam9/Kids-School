@@ -7,241 +7,209 @@
   font-weight: 400;
   font-style: normal;
 }
-
-/* General styles */
-body{
+/* ------------------------Font link End------------------------------------------ */
+body {
     margin: 0;
-}
+    padding: 0;
+  }
 
-.display-flex{
+  .nav-font{
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  nav {
     display: flex;
-    max-width: 1160px;
-    max-height: 575px;
-    
-}
-
-/* Navbar styles */
-.navbar{
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 10px 20px;
     justify-content: space-between;
-    align-items: center;  /*  imp  */
-}
-
-/* Logo and Brand */
-.logo-brand{
+    align-items: center;
+    /* background-color: #f0f0f0; */
+    padding: 10px; 
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-}
-
-.logo-brand img{
-    height: 40px;
+  }
+  
+  .logo img {
+    width: 50px; 
     margin-right: 10px;
-}
-.brand{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Navigation Links */
-.nav-links{
+  }
+  
+  .nav-links {
     display: flex;
-    justify-content: center;
-    flex: 1;
-}
-
-.nav-item{
     list-style: none;
-    margin-right: 30px;
-}
-
-.nav-link{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: #333;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-
-/* Individual link colors */
-.home{
-    color: orange;
-}
-
-.about{
-    color: skyblue;
-}
-
-.facilities{
-    color: #05D4DF;
-}
-
-.admission{
-    color: #5D58EF;
-}
-
-/* Contact button */
-.btn-contact{
-    color: white;
-    font-size: 1/25rem;
-    background-color: orange;
+  }
+  
+  .contact-btn {
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.0rem;
     border: none;
-    border-radius: 12px;
-    padding: 10px 35px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+  }
+
+  /* ----------------------Navigation End------------------------------------------------ */
+
+  /* Mobile Navigation Styles */
+
+  .menu-toggle {
+    display: none; /* Hide menu toggle on larger screens */
+    width: 30px;
+  }
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+
+@media screen and (max-width: 574px) { 
+    .menu-toggle {
+      display: block; 
+    }
+
+    .nav-links, .title{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+ /* ------------------ Navigation Styles End --------------------------- */ 
+ .card-enroll {
+    /* display: block; */
+    flex-direction: row-reverse;
+  }
+ 
 }
 
-.btn-contact:hover{
-    background-color:orange;
-}
+/* ------------------------@media screen Ends ------------------------------- */
 
-#btn-enroll{
+  /* ------------------------------Mobile Navigation Styles Ends--------------------------------------------------*/
+  .card-enroll {
+   
+    display: grid;
+    grid-template-columns: 1fr auto; /* Adjust column widths as needed */
+    grid-gap: 20px; /* Space between grid items */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+  }
+  
+  .image-container {
+    text-align: center; /* Center the image within its container */
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; 
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+  }
+  
+  .text-container h1 {
+    margin-bottom: 15px; 
+  }
+  
+ #btn-enroll{
     background-color: black;
     color: white;
-    font-size: 1.20rem;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 1.25;
     font-weight: bold;
-    border-radius: 12px;
-    padding: 10px 25px;
-}
-
-/* Mobile view */
-@media screen and (max-width: 576px) {
-    /* Hide elements */
-    .nav-links,
-    .btn-contact,
-    .brand    
-    {
-        display: none; 
-    }
-   
-
-    /* Logo Styling */
-    .logo-brand {
-        margin-left: 20px; /* Add left margin for spacing */
-        margin-top: 10px;
-                
-    }
-
-    /* Menu Icon Styling */
-    .menu-icon {
-        margin-right: 20px;
-        margin-top: 10px;
-        position: center;
-        
-        
-    }
-
-    .menu-icon span {
-        display: block;
-        width: 40px;
-        height: 3px;
-        background-color: black;
-        margin-bottom: 5px;
-    }
-}
-
-/* -----------------------Section two--------------------- */
-/* Main Banner Section */
-.banner {
-    display: flex;
-    flex-direction: column;
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    align-items: center;
-    /* background-image: url('assets/bg.png'); */
-    background-size: cover;
-    background-position: center;
-}
-
-/* Section Heading */
-.curriculum {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-/* Cards Section */
-.cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.card {
-    max-height: 480px;
-    max-width: 367px;
-    flex: 1;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    color:black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-    max-width: 100px;
-    margin-bottom: 10px;
-}
-
-.card-detail-font{
-    color: rgba(128, 128, 128, 1);
-}
-
-.card-enroll {
-    max-height: 331px;
-    max-width: 640px;
-    flex: 1;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: left;
-}
-
-.card-hero {
-    max-height: 331px;
-    max-width: 640px;
-    flex: 1;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: left;
-}
-
-.content{
-    align-content: center;
-}
-
-/* Unique Gradient Backgrounds */
-.kinder {
-    background: linear-gradient(180deg, rgba(222, 245, 255, 1), white);
-}
-
-.elementary {
-    background: linear-gradient(135deg, rgba(255, 244, 220, 1), white);
-}
-
-.middle {
-    background: linear-gradient(135deg, rgba(242, 232, 255, 1), white);
-}
-
-/* Read More Button */
-#btn-two {
+    max-width: 197px;
+    max-height: 50px;
     border: none;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 1.25rem;
-    /* color: black; */
+ }
+
+ /* -------------------card-enroll content Ends------------------------ */
+ .curriculum-section {
+    position: relative;
+    text-align: center; /* Center-align the section */
+    padding: 50px 0; /* Add top and bottom padding */
+    
+  }
+
+  .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content-container{
+    position: relative;
+    z-index: 1;
+  }
+  .curriculum-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .card-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space cards evenly */
+    
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center; 
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  .card img {
+    max-width: 100px; 
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .read-more {
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-}
-
-#btn-two:hover {
-    background-color: #f0f0f0;
-}
-
-/* Arrow Button Group */
-.arrow-buttons {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+ 
+  .arrow-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -270,51 +238,222 @@ body{
     color: white ;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
-}
-/* -----------------------Section 4------------------------------------ */
-.bg-story{
-    background: linear-gradient(180deg, white, rgb(254, 198, 100));
+#btn-two {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.25rem;
+    /* color: black; */
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-/* .story-img{
-   
-} */
+/* Unique Gradient Backgrounds */
+.kinder {
+    background: linear-gradient(180deg, rgba(222, 245, 255, 1), white);
+}
 
-.image-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Responsive columns */
-      grid-gap: 20px;
-    }
+.elementary {
+    background: linear-gradient(135deg, rgba(255, 244, 220, 1), white);
+}
 
-    .image-container {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-    }
+.middle {
+    background: linear-gradient(135deg, rgba(242, 232, 255, 1), white);
+}
 
-    .image-container img {
-      max-width: 100%;
-      height: auto;
-    }
 
-    /* ------------------------------------------------------------------------------------ */
+ /* -----------------Curriculumn Section Ends   */
 
-    /* -------------------footer background------------------------------------------ */
-    .footer-bg{
-        background-color: #01ACFD;
-        padding: 123px 228px 173px 140px;
-        color: white;
-        justify-content: space-between;
-        /* display: grid; */
-    }
+ .our-stories {
+    text-align: center;
+    margin-top: 50px; 
+  }
+  
+  .our-stories h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .story-container {
+    display: flex; /* Use flexbox for horizontal layout */
+  }
+  
+  .story-column {
+    flex: 1; /* Make the column flexible to occupy available space */
+    margin-right: 20px; /* Add spacing between columns */
+    padding: 20px;
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    border-radius: 10px; 
+  }
+  
+  .story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .story-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  
+  .story-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .story-date {
+    /* background-color: #3CD8E8; */
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 40px;
+    border-radius: 48px;
+    margin-bottom: 10px;
+    border: none;
+  }
+  
+ .btn-one{
+    background-color: #05D4DF;
+    margin-left: -500px;
+    margin-top: -100px;
+}
+
+.btn-two{
+  
+  margin-left: -260px;
+  margin-top: -100px;
+}
+
+.btn-three{
+  margin-left: -260px;
+  margin-top: -100px;
+}
+
+.btn-four{
+  margin-left: -260px;
+  margin-top: -100px;
+}
+
+.btn-five{
+  margin-left: -260px;
+  margin-top: -100px;
+}
+.btn-two,
+.btn-four,
+.btn-five{
+  background-color: #95B226;
+}
+.btn-three{
+  background-color: #5D58F0;
+}
  
+
+  .bg-story{
+    background: linear-gradient(180deg, white, rgb(254, 198, 100));
+    position: relative; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+
+/* --------------View all Button starts------------------------------- */
+.view-all-btn-container { 
+  position: absolute;
+  bottom: 20px; /*Adjust bottom margin as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  
+ } 
+
+.view-all-btn {
+  display: block;
+  padding: 15px 50px;
+  background-color: black;
+  color: #fff;
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-radius: 12px;
+  text-align: center; 
+    
+}
+
+/* .view-all-btn-container {
+  position: absolute;
+  bottom: -50px; /* Increased bottom margin */ 
+  /* left: 50%; */
+  /* transform: translateX(-50%);  */
+/* } */
+
+
+
+  /* --------------Our Story ends------------------------------ */
+
+  .footer {
+    background-color: #01ACFD; /* Blue background color */
+    color: #fff; 
+    padding: 50px 0; 
+  }
+  
+  .container {
+    max-width: 100% vw;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .footer-column {
+    width: 30%; 
+  }
+  
+  .footer-column h2 {
+    margin-bottom: 20px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .first-font{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .para1{
+    font-size: 1.25rem;
+  }
+
+  .second-font{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .ul-font{
+    font-size: 1.5rem;
+  }
+
+  .third-font{
+    font-size: 1.625rem;
+  }
+  .social-links{
+    display: flex;
+    gap: 5px;
+  }
+ 
+  /* ----------------Footer ends------------------ */

@@ -1,170 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids-Education</title>
-    <link rel="stylesheet" href="styles/kid-school.css">
+  <title>School Navigation</title>
+  <link rel="stylesheet" href="styles/2ndcss.css">
 </head>
-
 <body class="quicksand-font">
-    <header class="dis-diplay-flex">
-        <nav class="navbar display-flex">
-            <div class="logo-brand display-flex">
-                <img class="image-align" src="assets/logo.png" alt="Logo">
-                <h3 class="brand">SCHOOL</h3>
-            </div>
-            <ul class="nav-links display-flex">
-                <li class="nav-item"><a href="#" class="nav-link home">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link about">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link facilities">Facilities</a></li>
-                <li class="nav-item"><a href="#" class="nav-link admission">Admission</a></li>
-            </ul>
-            <button class="btn-contact">Contact</button>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-        </nav>
-        <div class="display-flex">
-            <div class="card-enroll content">
-                <h1><span style="color: orange;">Empowering</span><br>
-                    students from small<br> age <span style="color:#05D4DF;">towards vision</span></h1>
-                <p class="content-text">With the courage, Confidence, Creativity and Compassion to make their Unique
-                    Contribution in a Diverse and Dynamic World.</p>
-                <button id="btn-enroll">Enroll Now</button>
-            </div>
-            <div class="card-hero content">
-                <img class="hero-img" src="assets/hero-kids.png" alt="">
-            </div>
-        </div>
-
-    </header>
-
-    <main class="banner">
-        <img src="assets/bg.png" alt="Background" class="hero-img">
-        <section>
-            <h3 class="curriculum">Standard Curriculum</h3>
-            <div class="cards">
-                <div class="card kinder">
-                    <img src="assets/kinder.png" alt="Kinder Image">
-                    <h4>Kinder (3-6 Years)</h4>
-                    <p class="card-detail-font">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus dis parturient.</p>
-                    <button id="btn-two"><span style="color: #05D4DF;">Read More</span></button>
+            <nav class="nav-font">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="School Logo"> 
+                    <span class="title">SCHOOL</span> 
                 </div>
+                    <ul class="nav-links">
+                        <li><a href="#"><span style="color: orange ;">Home</span></a></li>
+                        <li><a href="#"><span style="color: skyblue;">About</span></a></li>
+                        <li><a href="#"><span style="color: #05D4DF;">Facilities</span></a></li>
+                        <li><a href="#"><span style="color: #5D58EF;">Admission</span></a></li>
+                    </ul>
 
-                <div class="card elementary">
-                    <img src="assets/elementary.png" alt="Elementary Image">
-                    <h4>Elementary School</h4>
-                    <p class="card-detail-font">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus dis parturient.</p>
-                    <button id="btn-two"><span style="color: orange;">Read More</span></button>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+                <button class="contact-btn">Contact</button>
+            </nav>
+                <!-- ---------Navigation part Ends-------------------------------------------- -->
 
-                <div class="card middle">
-                    <img src="assets/middle.png" alt="Middle Image">
-                    <h4>Middle (10 Years)</h4>
-                    <p class="card-detail-font">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus dis parturient.</p>
-                    <button id="btn-two"><span style="color: #8700FF;">Read More</span></button>
+                <div class="card-enroll">
+                    
+                    <div class="text-container">
+                        <h1><span style="color: orange;">Empowering</span><br>
+                        students from small<br> age <span style="color:#01ACFD;">towards vision</span></h1>
+                        <p class="content-text">With the courage, Confidence, Creativity and Compassion to make their Unique<br>
+                        Contribution in a Diverse and Dynamic World.</p>
+                        <button id="btn-enroll">Enroll Now</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="assets/hero-kids.png" alt="Card Image"> 
+                    </div>
                 </div>
-            </div>
-            <div class="arrow-buttons">
-                <button class="arrow-btn">&lt;</button>
-                <button class="arrow-btn">&gt;</button>
-            </div>
-        </section>
+            
+            <!----------------- -----Card Enroll Ends------------------------------- -->
+            
+                    <main>
+                        <div class="curriculum-section">
+                            <div class="background"> 
+                                <img src="assets/bg.png" alt="Background Image"> 
+                            </div>
+                                <h2>Standard Curriculum</h2> 
+                            <div class="card-container">
+                                <div class="card kinder">
+                                    <img src="assets/kinder.png" alt="Kindergarten Image">
+                                    <h3>Kinder (3-6) Years</h3>
+                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus dis parturient.</p>
+                                    <button id="btn-two"><span style="color: #05D4DF;">Read More</span></button>
+                                </div>
+                                <div class="card elementary">
+                                    <img src="assets/elementary.png" alt="Elementary Image">
+                                    <h3>Elementary School</h3>
+                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus dis parturient.</p>
+                                    <button id="btn-two"><span style="color: orange;">Read More</span></button>
+                                </div>
+                                <div class="card middle">
+                                    <img src="assets/middle.png" alt="Middle Image">
+                                    <h3>Middle (10-16) Years</h3>
+                                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus dis parturient.</p>
+                                    <button id="btn-two"><span style="color: #8700FF;">Read More</span></button>
+                                    
+                                </div>
+                            </div>
+                                <div class="arrow-buttons">
+                                    <button class="arrow-btn">&lt;</button>
+                                    <button class="arrow-btn">&gt;</button>
+                                </div>
+                            </div>
+
+                    </main>
+                    <!-- -------------Curriculumn section Ends------------------------------- -->
+                    <section class="our-stories">
+                        <h2>Our Stories</h2>
+                            <div class="story-container bg-story">
+                                <div class="story-column"> 
+                                    <img src="assets/story-1.png" alt="Story 1">
+                                    <button class="story-date btn-one">November 19, 2019</button>
+                                    <h3>A fun toddler coloring training on classroom</h3>
+                                    <p>Beautiful branding for changes by Never Now in Australia. changes is a platform for open discussion in an inclusive and collaborative environment, providing the...</p>
+                                </div>
+                                <div class="story-grid">
+                                    <div class="story-item"> 
+                                        <img src="assets/story-2.png" alt="Story 2">
+                                        <button class="story-date btn-two">November 19, 2019</button>
+                                        <h2>Find out if a school fits the family’s needs</h2>
+                                    </div>
+                                    <div class="story-item">
+                                        <img src="assets/story-3.png" alt="Story 3">
+                                        <button class="story-date btn-three">November 19, 2019</button>
+                                        <h2>Find out if a school fits the family’s needs</h2>
+                                    </div>
+                                    <div class="story-item">
+                                        <img src="assets/story-4.png" alt="Story 4">
+                                        <button class="story-date btn-four">September 19, 2019</button>
+                                        <h2>Find out if a school fits the family’s needs</h2>
+                                    </div>
+                                    <div class="story-item">
+                                        <img src="assets/story-5.png" alt="Story 5">
+                                        <button class="story-date btn-five">July 19, 2019</button>
+                                        <h2>Find out if a school fits the family’s needs</h2>
+                                    </div>
+                                    
+                                </div>
+                                <div class="view-all-btn-container"> 
+                                    <button class="view-all-btn">View All</button> 
+                                </div>  
+                            </div>
+                            
+                    </section>
+
+                    <!-- -----Our Story Section ends -->
+                    
+                        <footer class="footer">
+                            <div class="container">
+                              <div class="footer-column">
+                                <img src="assets/logo.png" alt="Kids Education Logo"> 
+                                <h2 class="first-font">Kids<br>Education</h2>
+                                <p class="para1">Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
+                              </div>
+                              <div class="footer-column">
+                                <h2 class="second-font">About School</h2>
+                                <ul class="ul-font">
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#">About</a></li>
+                                  <li><a href="#">Facilities</a></li>
+                                  <li><a href="#">Admission</a></li>
+                                </ul>
+                              </div>
+                              <div class="footer-column">
+                                <h2 class="third-font">Keep In Touch</h2>
+                                <ul class="social-links">
+                                  <li><a href="#"><img src="assets/fb.png" alt=""></a></li>
+                                  <li><a href="#"><img src="assets/dribble.png" alt=""></a></li>
+                                  <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
+                                  <li><a href="#"><img src="assets/google+.png" alt=""></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                        </footer>
+                    
 
 
-        <section class="bg-story">
-            <img src="assets/bg.png" alt="Background">
-            <h3 class="curriculum">Our Stories</h3>
-            <div>
-                <img class="story-img" src="assets/story-1.png" alt="">
-                <button>November 19, 2019</button>
-                <h3 class="curriculum">A fun toddler coloring training on
-                    classroom</h3>
-                <p>Beautiful branding for changes by Never Now in Australia.
-                    changes is a platform for open discussion in an inclusive and
-                    collaborative environment, providing the...</p>
-
-
-                <div class="image-grid">
-                    <div class="image-container">
-                        <img src="assets/story-2.png" alt="Image 1">
-                        <button>November 19, 2019</button>
-                        <h2>Find out if a school fits the
-                            family’s needs</h2>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="assets/story-3.png" alt="Image 2">
-                        <button>November 19, 2019</button>
-                        <h2>Find out if a school fits the
-                            family’s needs</h2>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="assets/story-4.png" alt="Image 3">
-                        <button>September 19, 2019</button>
-                        <h2>Find out if a school fits the
-                            family’s needs</h2>
-                    </div>
-
-                    <div class="image-container">
-                        <img src="assets/story-5.png" alt="Image 4">
-                        <button>July 19, 2019</button>
-                        <h2>Find out if a school fits the
-                            family’s needs</h2>
-                    </div>
-
-                </div>
-                <button>View All</button>
-                <!-- ------------------------------ -->
-
-            </div>
-
-            </div>
-
-            </div>
-
-            </div>
-        </section>
-
-    </main>
-    <footer class="footer-bg display-flex">
-        <div>
-
-            <img src="assets/logo.png" alt="">
-            <h2>Kids<br>Education</h2>
-            <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
-
-        </div>
-
-        <div>
-            <h2>About School</h2>
-            <h2>Home</h2>
-            <h2>About</h2>
-            <h2>Facilities</h2>
-            <h2>Admission</h2>
-
-        </div>
-
-        <div>
-            <h2>Keep In Touch</h2>
-            <img src="assets/fb.png" alt="">
-            <img src="assets/dribble.png" alt="">
-            <img src="assets/twitter.png" alt="">
-            <img src="assets/google+.png" alt="">
-
-        </div>
-
-
-    </footer>
 </body>
-
 </html>
