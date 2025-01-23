@@ -15,6 +15,9 @@ body{
 
 .display-flex{
     display: flex;
+    max-width: 1160px;
+    max-height: 575px;
+    
 }
 
 /* Navbar styles */
@@ -83,12 +86,21 @@ body{
     background-color: orange;
     border: none;
     border-radius: 12px;
-    padding: 10px 20px;
+    padding: 10px 35px;
     cursor: pointer;
 }
 
 .btn-contact:hover{
     background-color:orange;
+}
+
+#btn-enroll{
+    background-color: black;
+    color: white;
+    font-size: 1.20rem;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 10px 25px;
 }
 
 /* Mobile view */
@@ -175,6 +187,28 @@ body{
 
 .card-detail-font{
     color: rgba(128, 128, 128, 1);
+}
+
+.card-enroll {
+    max-height: 331px;
+    max-width: 640px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.card-hero {
+    max-height: 331px;
+    max-width: 640px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.content{
+    align-content: center;
 }
 
 /* Unique Gradient Backgrounds */
