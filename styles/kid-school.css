@@ -8,9 +8,14 @@
   font-style: normal;
 }
 /* ------------------------Font link End------------------------------------------ */
-body {
+/* body {
     margin: 0;
     padding: 0;
+    
+  } */
+  body {
+    max-width: 1440px;
+    margin: 0 auto; /* Center the content horizontally */
   }
 
   .nav-font{
@@ -78,23 +83,41 @@ body {
     margin-bottom: 5px;
   }
 
-@media screen and (max-width: 574px) { 
-    .menu-toggle {
-      display: block; 
-    }
 
-    .nav-links, .title{
-        display: none;
-    }
-    .contact-btn{
-        display: none;
-    }
- /* ------------------ Navigation Styles End --------------------------- */ 
- .card-enroll {
-    /* display: block; */
-    flex-direction: row-reverse;
+@media screen and (max-width: 574px) {
+  /* Navigation Styles */
+  .menu-toggle {
+    display: block; 
   }
- 
+
+  .nav-links, .title {
+    display: none;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  /* Card Enroll Styles */
+  .card-enroll {
+    flex-direction: column-reverse; /* Display in a single column with image above text */
+  }
+
+  /* Curriculum Section Styles */
+  .card-container {
+    flex-direction: column; /* Display cards in a single column */
+  }
+
+  /* Our Stories Section Styles */
+  .story-grid {
+    display: flex; /* Use flexbox to arrange items in a single column */
+    flex-direction: column; 
+  }
+
+  /* Footer Styles */
+  .footer .container {
+    flex-direction: column; /* Display footer columns in a single column */
+  }
 }
 
 /* ------------------------@media screen Ends ------------------------------- */
